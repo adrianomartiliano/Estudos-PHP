@@ -13,7 +13,7 @@ class Controle {
         if($this->ligado){
             $this->ligado = false;
         }else{
-            $this->ligado = $ligado;
+            $this->ligado = true;
         }
     }
     function maisVolume(){
@@ -31,5 +31,32 @@ class Controle {
             $this->volume = 0;
         }
     }
+    function status(){
+        if ($this->ligado){
+            echo "A TV está ligada<br>";
+            echo "O volume está no ". $this->volume;
+        }else {
+            echo "A TV está desligada";
+        }
+    }
+    }
+    
+    public function getLigado() {
+        return $this->ligado;
+    }
+
+    public function getVolume() {
+        return $this->volume;
+    }
+
+    public function setLigado($ligado): void {
+        $this->ligado = $ligado;
+    }
+
+    public function setVolume($volume): void {
+        $this->volume = $volume;
+    }
+
+
     
 }
