@@ -14,9 +14,16 @@
             
             $p1 = new Pessoa("Adriano", 28, "M");
             $p2 = new Aluno("Ingles");
+            $p3 = new Professor("Matematica");
+            $p3->setNome("Cicero");
             
+            $p2->setNome("Jose");
+            
+            print_r($p1);
             print_r($p2);
-        
+            print_r($p3);
+            $p3->receberAum(400);
+            print_r($p3);
         
         
         ?>
