@@ -39,24 +39,21 @@ class Controle {
             echo "A TV está desligada";
         }
     }
-    }
     
-    public function getLigado() {
+    function getLigado() {
         return $this->ligado;
     }
 
-    public function getVolume() {
+    function getVolume() {
         return $this->volume;
     }
 
-    public function setLigado($ligado): void {
+    function setLigado($ligado): void {
         $this->ligado = $ligado;
     }
 
-    public function setVolume($volume): void {
+    function setVolume($volume): void {
         $this->volume = $volume;
-    }
-
-
-    
+    }  
 }
+?>
