@@ -61,7 +61,17 @@
             <input type="submit" value="Calcular">
             
         </fieldset>
+    </form><br>
+
+    <form action="primo.php" method="post">
+        <fieldset>
+            <legend>Número Primo</legend>
+            <input type="number" name="num" >
+            <input type="submit" value="Verificar" >
+        </fieldset>
     </form>
+
+
     
 </body>
 </html>
