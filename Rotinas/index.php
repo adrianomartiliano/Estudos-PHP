@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php
-        function soma(){
+        require_once 'funcoes.php';
+        /*function soma(){
             $v = func_get_args(); //adiciona os parametros em um vator v
             $t = func_num_args(); //retorna o valor total de parametros passados.
             $res = 0;
@@ -19,7 +20,9 @@
             return $res;
         }
         $r = soma(1, 2, 3, 4, 5);
-        echo "$r";
+        echo "$r";*/
+        ola();
+        soma(4, 5);
     
     ?> 
     
