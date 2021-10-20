@@ -9,33 +9,58 @@
 </head>
 <body>
     <form action="resultado.php" method="post">
-        Valor 1: <input type="number" name="v1"><br>
-        Valor 2: <input type="number" name="v2">
         <fieldset>
             <legend>Operações</legend>
+            Valor 1: <input type="number" name="v1"><br>
+            Valor 2: <input type="number" name="v2">
             <label for="1">Somar</label><input type="radio" name="op" value="1" checked><br>
             <label for="2">Subtrair</label><input type="radio" name="op" value="2"><br>
             <label for="3">Divisão</label><input type="radio" name="op" value="3"><br>
             <label for="4">Multiplicação</label><input type="radio" name="op" value="4">
+            <input type="submit" value="Resultado">
         </fieldset>
-        <input type="submit" value="Resultado">
+        
     </form>
     <br>
     <form action="contador.php" method="post">
-        <label for="n1">De </label><input type="number" name="n1"><br>
-        <label for="n2">Até </label><input type="number" name="n2"><br>
-        Intervalo: <select name="inter" id="intervalo" >
+        <fieldset>
+            <legend>Contador com invervalos</legend>
+            <label for="n1">De </label><input type="number" name="n1"><br>
+            <label for="n2">Até </label><input type="number" name="n2"><br>
+            Intervalo: <select name="inter" id="intervalo" >
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
         </select><br>
         <input type="submit" value="Conte">
-    </form><br><br><br>
+        </fieldset>
+    </form><br>
     
     <form action="fatorial.php" method="post">
-        Valor: <input type="number" name="val">
-        <input type="submit" value="Calcular">
+        <fieldset>
+            <legend>Fatorial</legend>
+            Valor: <input type="number" name="val">
+            <input type="submit" value="Calcular">
+        </fieldset>
+    </form><br>
+
+    <form action="tabuada.php" method="post">
+        <fieldset>
+            <legend>Tabuada</legend>
+            <select name="op">
+                <?php
+                    $i = 1;
+                    while($i <= 10){
+                        echo "<option value='$i'>$i</option>";
+                        $i++;
+                    }
+
+                ?>
+            </select>
+            <input type="submit" value="Calcular">
+            
+        </fieldset>
     </form>
     
 </body>
