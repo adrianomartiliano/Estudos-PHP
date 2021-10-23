@@ -5,7 +5,13 @@
     class peixe extends animal{
 
         function locomover(){
-            echo "Nadando...";
+            echo "<br>Nadando...";
         }
-        
+        function seAlimentar(){
+            echo "<br>Comendo...";
+        }
+        function fazerSom(){
+            echo "<br>Vixi, não sei qual é o som do peixe...";
+        }
+
     }

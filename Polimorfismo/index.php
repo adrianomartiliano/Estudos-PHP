@@ -8,14 +8,19 @@
 </head>
 <body>
     <?php
-        require_once 'cachorro.php';
+        require_once 'mamifero.php';
         require_once 'peixe.php';
+        require_once 'cachorro.php';
 
-        $c = new cachorro();
+        $c = new mamifero();
         $c -> locomover();
 
         $p = new peixe();
         $p -> locomover();
+
+        $c1 = new cachorro();
+        $c1 -> fazerSom();
+        $c1 -> locomover(); 
  
     
     ?>

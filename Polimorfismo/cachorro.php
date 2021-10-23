@@ -1,16 +1,14 @@
 <?php
 
-    require_once 'animal.php';
+require_once 'mamifero.php';
 
-    class cachorro extends animal{
+class cachorro extends mamifero{
 
-        private $mamifero;
-
-        function locomover(){
-            echo "Andando...";
-        }
-        private function seAlimentar(){
-            echo "Mamando...";
-        }
-
+    function locomover(){
+        echo "<br>Correndo rápidoooo...";
     }
+
+    function fazerSom(){
+        echo "<br>au au au au...";
+    }
+}

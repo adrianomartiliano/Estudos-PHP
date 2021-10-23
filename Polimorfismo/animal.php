@@ -4,15 +4,20 @@
         private $peso;
         private $tipo;
 
-        private function locomover(){
+        abstract function locomover();
+        abstract function seAlimentar();
+        abstract function fazerSom();
 
+        function getPeso(){
+            return $this->peso;
         }
-
-        private function seAlimentar(){
-
+        function setPeso($peso){
+            $this->peso = $peso;
         }
-
-        private function fazerSom(){
-
+        function getTipo(){
+            return $this->tipo;
+        }
+        function setTipo($tipo){
+            $this->tipo = $tipo;
         }
     }
