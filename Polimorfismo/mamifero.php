@@ -16,4 +16,12 @@
             echo "<br>Som de mamifero...";
         }
 
+        function setPeso($peso){
+            $this->peso = $peso;
+        }
+
+        function getPeso(){
+            return $this->peso;
+        }
+
     }
