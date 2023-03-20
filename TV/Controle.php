@@ -33,10 +33,10 @@ class Controle {
     }
     function status(){
         if ($this->ligado){
-            echo "A TV está ligada<br>";
+            echo "<br />A TV está ligada<br>";
             echo "O volume está no ". $this->volume;
         }else {
-            echo "A TV está desligada";
+            echo "<br />A TV está desligada<br />";
         }
     }
     

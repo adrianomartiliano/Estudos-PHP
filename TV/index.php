@@ -24,6 +24,8 @@
             $c->status();
             $c->onOff();
             $c->status();
+            $c->onOff();
+            $c->status();
         ?>
         </pre>
     </body>
